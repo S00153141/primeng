@@ -69,6 +69,7 @@ export class ObjectUtils {
                     if (value == null) {
                         return null;
                     }
+                    fields[i] = fields[i].replace(' ', '');
                     value = value[fields[i]];
                 }
                 return value;
